@@ -28,16 +28,9 @@ export default function page() {
           </Link>
         </div>
       </div>
+      {/* This is temporary */}
+      <iframe className={styles.booking} src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3_CL8QHjOyc92X6A-S-p2EOGKwrf3cUQL4wktUuSn6zKQa1moDr9-EPv21EY5SCcUTsl8kEvD0?gv=true"></iframe>
       <div className={styles.center}>
-        <div className={styles.card}>
-            <h2>
-              Appointment Booking <span><img src={"/githubLogo.png"} width={30} height={30}/></span>
-            </h2>
-            <p style={{fontSize:"1rem"}}>Want to book a programming session with me? Click the button below!</p>
-            <Link className={styles.navlinks} href="/business/booking">
-              <p>BUTTON</p>
-            </Link>
-          </div>
       </div>
 
       <div className={styles.grid}>

@@ -19,7 +19,7 @@ export default function Home() {
             <p>My Portfolio</p>
           </Link>
           <Link className={styles.navlinks} href="/business">
-            <p>My Business</p>
+            <p>Tutoring</p>
           </Link>
           <Link className={styles.navlinks} href="/about">
             <p>About Me</p>
