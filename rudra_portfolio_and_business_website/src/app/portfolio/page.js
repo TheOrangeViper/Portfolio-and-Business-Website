@@ -28,8 +28,6 @@ export default function page() {
           </Link>
         </div>
       </div>
-      {/* This is temporary */}
-      <iframe style={{height:"1000px", width:"1000px", backgroundColor:"white"}}src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3_CL8QHjOyc92X6A-S-p2EOGKwrf3cUQL4wktUuSn6zKQa1moDr9-EPv21EY5SCcUTsl8kEvD0?gv=true"></iframe>
       <div className={styles.center}>
         <a
             href="https://github.com/TheOrangeViper"
