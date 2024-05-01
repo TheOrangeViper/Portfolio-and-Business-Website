@@ -22,11 +22,11 @@ export default function Home() {
           </a>
         </div>
         <p className={styles.navbar}>
-          <Link href="/">Home</Link>
-          <Link href="/portfolio">My Portfolio</Link>
-          <Link href="/business">My Business</Link>
-          <Link href="/about">About Me</Link>
-          <Link href="/contact">Contact Me</Link>
+          <Link className={styles.navlinks} href="/">Home</Link>
+          <Link className={styles.navlinks} href="/portfolio">My Portfolio</Link>
+          <Link className={styles.navlinks} href="/business">My Business</Link>
+          <Link className={styles.navlinks} href="/about">About Me</Link>
+          <Link className={styles.navlinks} href="/contact">Contact Me</Link>
         </p>
       </div>
 
