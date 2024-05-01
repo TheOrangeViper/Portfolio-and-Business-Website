@@ -34,8 +34,8 @@ export default function Home() {
         <div>
           <p style={{fontWeight:"bold", fontSize:"2rem", marginLeft:"1.5rem", fontStyle:"oblique"}}>Featured: </p>
           <div className={styles.contentDisplay}>
-            <Image className={styles.contentDisplayImage} src="/gif1.gif" width={330} height={330}/>
-            <Image className={styles.contentDisplayImage} src="/gif2.gif" width={330} height={330}/>
+            <Image className={styles.contentDisplayImage} src="/vscode.gif" width={330} height={330}/>
+            <Image className={styles.contentDisplayImage} src="/winterFleming.gif" width={480} height={330}/>
               <Link href="/business">
                 <div className={styles.advertisement}>
                     <Image src="/bannerAD.png" width={240} height={390}></Image>
