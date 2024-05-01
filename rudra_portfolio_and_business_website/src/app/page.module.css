@@ -5,6 +5,8 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-image: url('/Portfolio__Business_Website_Background.jpg');
+  background-size: cover;
 }
 
 .description {
@@ -16,6 +18,7 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font);
+  position: relative;
   
 }
 
@@ -36,8 +39,8 @@
   margin: 0;
   padding: 1rem;
   color: black;
-  background-color: rgb(118, 129, 160);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  /* background-color: rgb(16, 185, 129); */
+  /* border: 1px solid rgba(var(--callout-border-rgb), 0.3); */
   border-radius: var(--border-radius);
 }
 
@@ -57,10 +60,11 @@
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
-  border: 2.5px solid rgba(0,0,0, 1);
-  transition: background 200ms, border 200ms;
+  border: 3px solid rgba(0,0,0, 1);
+  transition: background 400ms, border 400ms;
   margin: 10px;
-  background-color: rgb(118, 129, 160);
+  background-color: rgb(16, 185, 129);
+  box-shadow: 14px 15px 29px rgba(0, 0, 0, 50);
 }
 
 .card span {
@@ -129,15 +133,41 @@
 
 .navbar {
   display: flex;
-  justify-content: space-around;
-  width: 65rem;
+  /* justify-content: space-around; */
+  max-width: 65rem;
   font-size: 1.25rem;
   font-weight: 660;
+  box-shadow: 14px 16px 25px rgba(0, 0, 0, 50);
+  background-color: rgb(16, 185, 129);
+  border: 3px solid rgba(0,0,0, 1); 
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+.navlinks {
+  width: 8rem;
+  font-size: small;
+  transition: background-color 0.5s, margin-left 0.75s, margin-right .75s;
 }
 
 .vercelLogo {
-  width: 10rem;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  width: 15rem;
+}
+
+.vercelLogo h1{
+  position: absolute;
+  margin-top: -1.5rem;
+  margin-left: 1.5rem;
+  padding: 10px;
+  /* margin-right: 1.5rem; */
+  /* top: 0;
+  left: 0; */
 }
 
 .contentDisplay {
@@ -148,30 +178,39 @@
   align-content: center;
   align-items: center;
   justify-self: center;
+  margin:1.5rem;
+  margin-top: 0rem;
 }
 
 .contentDisplayImage {
-  margin: 10px;
+  margin-right: 1rem;
   border-radius: 5px;
   box-shadow: 14px 24px 50px rgba(0, 0, 0, 50);
 }
 
 .advertisement {
-  margin-left: 6rem;
-  margin-right: 5px;
-  height: 26rem;
-  width: 12rem;
-  background-color: rgb(118, 129, 160);
+  display: flex;
+  margin-left: 3rem;
+  min-height: 20rem;
+  width: 15rem;
+  /* height: 26rem;
+  width: 13rem; */
+  background-color: rgb(16, 185, 129);
   align-content: center;
   text-align: center;
   border-radius: 10px;
   border: 2.5px solid rgba(0,0,0, 1);
   color: black;
-  /* box-shadow: 0px 0px 25px rgba(255, 233, 147, 1); */
+  box-shadow: 15px 15px 5px rgb(16, 185, 129);
+  transition: box-shadow .75s;
 }
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
+  .advertisement:hover {
+    box-shadow: 15px 15px 5px rgb(255, 157, 113);
+    transition: box-shadow .75s;
+  }
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
@@ -183,13 +222,21 @@
     transform: translateX(4px);
   }
 
-  .navlinks:hover {
-    background-color: rgb(231, 127, 103);
-    border-radius: 5px;
-    box-shadow: 0px 0px 50px rgba(231, 127, 103, 999);
-    
-  
+  .navbar:hover {
+    background-color: rgb(255, 146, 95);
+    transition: background-color 0.5s,
   }
+
+  .navlinks:hover {
+    background-color: rgb(255, 157, 113);
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: background-color 0.5s, margin-left 0.75s, margin-right .75s;
+    
+  }
+
+
 }
 
 @media (prefers-reduced-motion) {
@@ -200,6 +247,16 @@
 
 /* Mobile */
 @media (max-width: 900px) {
+  .navbar {
+    box-shadow: none;
+  }
+  .navlinks {
+    width: 100px;
+    font-size: small;
+    margin: 0rem;
+  }
+
+
   .advertisement {
     display: none;
     height: 0;
@@ -212,11 +269,7 @@
     color: red;
   }
 
-  .vercelLogo {
-    display: none;
-    height: 0;
-    width: 0;
-  }
+
   .content {
     padding: 4rem;
   }
@@ -237,7 +290,7 @@
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 0rem 0 6rem;
   }
 
   .center::before {
@@ -246,42 +299,44 @@
   }
 
   .description {
+    display: flex;
+    position: absolute;
     font-size: 0.8rem;
+    
   }
 
   .description a {
     padding: 1rem;
   }
 
-  .description p,
+  /* .description p, */
   .description div {
     display: flex;
     justify-content: center;
     position: fixed;
     width: 100%;
-    
+    top: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 
   .description p {
     align-items: center;
     inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
+    padding: 0rem 0.1rem 0rem;
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgb(118, 129, 160),
-      rgb(118, 129, 160)
-    );
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
-
-  .description div {
-    display: none;
+  .vercelLogo {
+    height: 0;
+    width: 0;
+    margin: 0;
   }
-
 }
 
 /* Tablet and Smaller Desktop */

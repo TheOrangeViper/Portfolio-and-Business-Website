@@ -7,45 +7,43 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <div>
-          <a>
-            <div className={styles.vercelLogo}>
-              {/* <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              /> */}
-              <h1>Rudra Dey</h1>
-            </div>
-          </a>
+          <div className={styles.vercelLogo}>
+            <h1>RUDRA <br></br>DEY.</h1>
+          </div>
         </div>
-        <p className={styles.navbar}>
-          <Link className={styles.navlinks} href="/">Home</Link>
-          <Link className={styles.navlinks} href="/portfolio">My Portfolio</Link>
-          <Link className={styles.navlinks} href="/business">My Business</Link>
-          <Link className={styles.navlinks} href="/about">About Me</Link>
-          <Link className={styles.navlinks} href="/contact">Contact Me</Link>
-        </p>
+        <div className={styles.navbar}>
+          <Link className={styles.navlinks} href="/">
+            <p>Home</p>
+          </Link>
+          <Link className={styles.navlinks} href="/portfolio">
+            <p>My Portfolio</p>
+          </Link>
+          <Link className={styles.navlinks} href="/business">
+            <p>My Business</p>
+          </Link>
+          <Link className={styles.navlinks} href="/about">
+            <p>About Me</p>
+          </Link>
+          <Link className={styles.navlinks} href="/contact">
+            <p>Contact Me</p>
+          </Link>
+        </div>
       </div>
 
       <div className={styles.center}>
-        <div className={styles.contentDisplay}>
-          <Image className={styles.contentDisplayImage} src="/gif1.gif" width={330} height={330}/>
-          <Image className={styles.contentDisplayImage} src="/gif2.gif" width={330} height={330}/>
-          <div className={styles.advertisement}>
-            <h1>Ad goes here!<br></br><br></br> (an image not text lol)</h1>
+        <div>
+          <p style={{fontWeight:"bold", fontSize:"2rem", marginLeft:"1.5rem", fontStyle:"oblique"}}>Featured: </p>
+          <div className={styles.contentDisplay}>
+            <Image className={styles.contentDisplayImage} src="/gif1.gif" width={330} height={330}/>
+            <Image className={styles.contentDisplayImage} src="/gif2.gif" width={330} height={330}/>
+              <Link href="/business">
+                <div className={styles.advertisement}>
+                    <Image src="/bannerAD.png" width={240} height={390}></Image>
+                  {/* <h1>Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> (an image not text lol)</h1> */}
+                </div>
+              </Link>
           </div>
         </div>
-        {/* <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        /> */}
       </div>
 
       <div className={styles.grid}>
