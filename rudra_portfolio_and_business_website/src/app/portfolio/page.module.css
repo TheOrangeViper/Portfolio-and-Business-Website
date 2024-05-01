@@ -58,6 +58,7 @@
 
 .card {
   padding: 1rem 1.2rem;
+  height: 20rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 3px solid rgba(0,0,0, 1);
@@ -101,6 +102,7 @@
   align-items: center;
   position: relative;
   padding: 4rem 0;
+  flex-wrap: wrap;
 }
 
 .center::before {
@@ -184,10 +186,9 @@
 
 .contentDisplayImage {
   margin-right: 1rem;
-  border: 3px solid rgba(0,0,0, 1);
+  border: 2.5px solid rgba(0,0,0, 1);
   border-radius: 5px;
-  box-shadow: 24px 24px 35px rgba(0, 0, 0, 50);
-  filter: brightness(0.8);
+  box-shadow: 14px 24px 50px rgba(0, 0, 0, 50);
 }
 
 .advertisement {
