@@ -5,7 +5,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-image: url('./../../../public/homeBackground.jpg');
+  /* background-image: url('./../../../public/homeBackground.jpg'); */
   background-size: cover;
   font-family: var(--font2);
 }
