@@ -2,6 +2,11 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import banner from "../../public/bannerAD.png";
+import vscode from "../../public/vscode.gif";
+import winterFleming from "../../public/winterFleming.gif";
+import github from "../../public/githubLogo.png";
+import youtube from "../../public/youtubeLogo.png";
+import linkedin from "../../public/linkedinLogo.png";
 
 export default function Home() {
   return (
@@ -35,12 +40,11 @@ export default function Home() {
         <div>
           <p style={{fontWeight:"bold", fontSize:"2rem", marginLeft:"1.5rem", fontStyle:"oblique"}}>Featured: </p>
           <div className={styles.contentDisplay}>
-            <Image className={styles.contentDisplayImage} src="../../public/vscode.gif" width={330} height={330}/>
-            <Image className={styles.contentDisplayImage} src="../../public/winterFleming.gif" width={480} height={330}/>
+            <Image className={styles.contentDisplayImage} src={vscode} width={330} height={330}/>
+            <Image className={styles.contentDisplayImage} src={winterFleming} width={480} height={330}/>
               <Link href="/business">
                 <div className={styles.advertisement}>
                     <Image src={banner} width={240} height={390}></Image>
-                  {/* <h1>Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> (an image not text lol)</h1> */}
                 </div>
               </Link>
           </div>
@@ -49,13 +53,13 @@ export default function Home() {
 
       <div className={styles.grid}>
         <a
-          href="https://github.com/TheOrangeViper"
+          href="https://github.com/deyrudra"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Github <span><img src={"../../public/githubLogo.png"} width={30} height={30}/></span>
+            Github <span><Image src={github} width={30} height={30}/></span>
           </h2>
           <p>Want to check out the projects on my github, click here!</p>
         </a>
@@ -67,7 +71,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Youtube <span><img src={"/youtubeLogo.png"} width={30} height={30}/></span>
+            Youtube <span><Image src={youtube} width={30} height={30}/></span>
           </h2>
           <p>To check out my youtube videos, click here!</p>
         </a>
@@ -79,7 +83,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Linkedin <span><img src={"../../public/linkedinLogo.png"} width={30} height={30}/></span>
+            Linkedin <span><Image src={linkedin} width={30} height={30}/></span>
           </h2>
           <p>Check out my Linkedin profile over here!</p>
         </a>

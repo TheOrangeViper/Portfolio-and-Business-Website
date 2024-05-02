@@ -1,6 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+
+import github from "../../../public/githubLogo.png";
+import youtube from "../../../public/youtubeLogo.png";
+import linkedin from "../../../public/linkedinLogo.png";
+
 export default function page() {
   return (
     <main className={styles.main}>
@@ -36,7 +41,7 @@ export default function page() {
             rel="noopener noreferrer"
           >
             <h2>
-              Github <span><img src={"../../public/githubLogo.png"} width={30} height={30}/></span>
+              Github <span><Image src={github} width={30} height={30}/></span>
             </h2>
             <p>Want to check out the projects on my github, click here!</p>
           </a>
@@ -48,7 +53,7 @@ export default function page() {
             rel="noopener noreferrer"
           >
             <h2>
-              Youtube <span><img src={"../../public/youtubeLogo.png"} width={30} height={30}/></span>
+              Youtube <span><Image src={youtube} width={30} height={30}/></span>
             </h2>
             <p>To check out my youtube videos, click here!</p>
           </a>
@@ -72,7 +77,7 @@ export default function page() {
             rel="noopener noreferrer"
           >
             <h2>
-              Linkedin <span><img src={"../../public/linkedinLogo.png"} width={30} height={30}/></span>
+              Linkedin <span><Image src={linkedin} width={30} height={30}/></span>
             </h2>
             <p>Check out my Linkedin profile over here!</p>
           </a>
@@ -84,7 +89,7 @@ export default function page() {
             rel="noopener noreferrer"
           >
             <h2>
-              Linkedin <span><img src={"../../public/linkedinLogo.png"} width={30} height={30}/></span>
+              Linkedin <span><Image src={linkedin} width={30} height={30}/></span>
             </h2>
             <p>Check out my Linkedin profile over here!</p>
           </a>
