@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import Link from "next/link";
 
 import formImage from "../../../public/pdfExample.png";
-// import formPDF from "../../../public/pdfExample.pdf";
 
 export default function page() {
   return (
@@ -55,7 +54,7 @@ export default function page() {
               
               {/* PUT THE FORM HERE AND MAKE IT CLICKABLE TO DOWNLOAD */}
               
-              <a href={"/pdfExample.pdf"}>
+              <a href={"../../../public/pdfExample.pdf"}>
                 <Image src={formImage} width={150} height={195} objectFit="cover" className={styles.attachmentImage}></Image>
               </a>
               <br></br>
