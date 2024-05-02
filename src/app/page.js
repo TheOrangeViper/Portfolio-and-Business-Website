@@ -35,8 +35,8 @@ export default function Home() {
         <div>
           <p style={{fontWeight:"bold", fontSize:"2rem", marginLeft:"1.5rem", fontStyle:"oblique"}}>Featured: </p>
           <div className={styles.contentDisplay}>
-            <Image className={styles.contentDisplayImage} src="/vscode.gif" width={330} height={330}/>
-            <Image className={styles.contentDisplayImage} src="/winterFleming.gif" width={480} height={330}/>
+            <Image className={styles.contentDisplayImage} src="../../public/vscode.gif" width={330} height={330}/>
+            <Image className={styles.contentDisplayImage} src="../../public/winterFleming.gif" width={480} height={330}/>
               <Link href="/business">
                 <div className={styles.advertisement}>
                     <Image src={banner} width={240} height={390}></Image>
@@ -55,7 +55,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Github <span><img src={"/githubLogo.png"} width={30} height={30}/></span>
+            Github <span><img src={"../../public/githubLogo.png"} width={30} height={30}/></span>
           </h2>
           <p>Want to check out the projects on my github, click here!</p>
         </a>
@@ -79,7 +79,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Linkedin <span><img src={"/linkedinLogo.png"} width={30} height={30}/></span>
+            Linkedin <span><img src={"../../public/linkedinLogo.png"} width={30} height={30}/></span>
           </h2>
           <p>Check out my Linkedin profile over here!</p>
         </a>

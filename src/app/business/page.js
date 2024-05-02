@@ -51,8 +51,8 @@ export default function page() {
               
               {/* PUT THE FORM HERE AND MAKE IT CLICKABLE TO DOWNLOAD */}
               
-              <a href="/pdfExample.pdf">
-                <Image src="/pdfExample.png" width={150} height={195} objectFit="cover" className={styles.attachmentImage}></Image>
+              <a href="../../public/pdfExample.pdf">
+                <Image src="../../public/pdfExample.png" width={150} height={195} objectFit="cover" className={styles.attachmentImage}></Image>
               </a>
               <br></br>
 
