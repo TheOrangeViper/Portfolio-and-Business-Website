@@ -5,8 +5,10 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-image: url('/Portfolio__Business_Website_Background.jpg');
+  background-image: url('/portfolioBackground.png');
   background-size: cover;
+  transition: background-image 5s;
+  font-family: var(--font);
 }
 
 .description {
@@ -28,8 +30,8 @@
   align-items: center;
   gap: 0.5rem;
   margin-right: 0.5rem;
-  color: rgb(17, 21, 30);
-  font-weight:700;
+  font-size: 0.8rem;
+  font-weight: 400;
   border: 10px;
   /* margin-left: 0.5rem; */
 }
@@ -38,7 +40,7 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  color: black;
+  /* color: black; */
   /* background-color: rgb(16, 185, 129); */
   /* border: 1px solid rgba(var(--callout-border-rgb), 0.3); */
   border-radius: var(--border-radius);
@@ -64,8 +66,10 @@
   border: 3px solid rgba(0,0,0, 1);
   transition: background 400ms, border 400ms;
   margin: 10px;
-  background-color: rgb(16, 185, 129);
+  background-color: rgb(26, 85, 94);
   box-shadow: 14px 15px 29px rgba(0, 0, 0, 50);
+  color: white;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
 }
 
 .card span {
@@ -140,10 +144,11 @@
   font-size: 1.25rem;
   font-weight: 660;
   box-shadow: 14px 16px 25px rgba(0, 0, 0, 50);
-  background-color: rgb(16, 185, 129);
+  background-color: rgb(26, 85, 94);
   border: 3px solid rgba(0,0,0, 1); 
   border-radius: 10px;
-  transition: background-color 0.5s;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .navlinks {
@@ -159,7 +164,7 @@
   align-content: center;
   align-items: center;
   font-size: 2rem;
-  color: black;
+  color: rgb(255, 157, 113);
   width: 15rem;
 }
 
@@ -228,7 +233,8 @@
 
   .navbar:hover {
     background-color: rgb(255, 146, 95);
-    transition: background-color 0.5s,
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
   }
 
   .navlinks:hover {

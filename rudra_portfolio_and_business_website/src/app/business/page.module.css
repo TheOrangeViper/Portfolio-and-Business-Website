@@ -5,8 +5,9 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-image: url('/Portfolio__Business_Website_Background.jpg');
+  background-image: url('/homeBackground.jpg');
   background-size: cover;
+  font-family: var(--font2);
 }
 
 .description {
@@ -56,15 +57,32 @@
   width: var(--max-width);
 }
 
-.card {
+.card2 {
   padding: 1rem 1.2rem;
-  height: 20rem;
+  /* height: 20rem; */
+  max-width: 30rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 3px solid rgba(0,0,0, 1);
   transition: background 400ms, border 400ms;
   margin: 10px;
-  background-color: rgb(16, 185, 129);
+  background-color: lightpink;
+  border-radius: 5rem;
+  box-shadow: 0px 0px 0px;
+  transition: height .75s, width .75s, background-color .75s, box-shadow .75s;
+}
+
+
+.card {
+  padding: 1rem 1.2rem;
+  /* height: 20rem; */
+  max-width: 30rem;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0);
+  border: 3px solid rgba(0,0,0, 1);
+  transition: background 400ms, border 400ms;
+  margin: 10px;
+  background-color: rgb(141, 177, 173);
   box-shadow: 14px 15px 29px rgba(0, 0, 0, 50);
 }
 
@@ -76,6 +94,11 @@
 .card h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .card span {
@@ -90,7 +113,6 @@
 .card p {
   margin: 0;
   opacity: 0.6;
-  font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
   text-wrap: balance;
@@ -140,7 +162,7 @@
   font-size: 1.25rem;
   font-weight: 660;
   box-shadow: 14px 16px 25px rgba(0, 0, 0, 50);
-  background-color: rgb(16, 185, 129);
+  background-color: rgb(141, 177, 173);
   border: 3px solid rgba(0,0,0, 1); 
   border-radius: 10px;
   transition: background-color 0.5s;
@@ -209,13 +231,84 @@
   transition: box-shadow .75s;
 }
 
+.attachment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attachmentImage {
+  border: 2.5px solid rgba(0,0,0, 1);
+  object-fit: cover;
+  box-shadow: 15px 15px 9px rgb(58, 127, 255);
+  transition: background-color .75s, box-shadow .75s;
+}
+
+.buttonText {
+  color:black;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  text-shadow: 3px 3px white;
+}
+
+.tutoringDesc {
+  background-color: rgb(173, 202, 255); /* Background color */
+  border: 2px solid #000000; /* Border color and thickness */
+  padding: 20px; /* Padding inside the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+  max-width: 83rem;
+  min-width: 29rem;
+  margin: 0.5rem;
+
+}
+
+.tutoringDesc p {
+  /* Style for the <p> text inside the box */
+  font-weight: 550;
+  font-size: 16px; /* Font size */
+  line-height: 1.5; /* Line height */
+  color: #333; /* Text color */
+  text-align: center;
+}
+
+.heading {
+  display: flex;
+  margin-top: 3rem;
+  max-width: 85rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* margin-left: 10%;
+  margin-right: 90%; */
+  padding: 10px;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.heading h2 {
+  /* Style for the heading inside the box */
+  font-size: 3rem; /* Font size */
+  margin-bottom: 10px; /* Bottom margin */
+  color: #333; /* Text color */
+  font-weight: 750;
+}
+
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .advertisement:hover {
     box-shadow: 15px 15px 5px rgb(255, 157, 113);
     transition: box-shadow .75s;
   }
-  .card:hover {
+
+  .card2:hover {
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(255, 138, 83);
+    transition: background-color .75s, box-shadow .75s;
+  }
+
+  /* .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
     background-color: rgb(255, 157, 113);
@@ -224,7 +317,7 @@
 
   .card:hover span {
     transform: translateX(4px);
-  }
+  } */
 
   .navbar:hover {
     background-color: rgb(255, 146, 95);
@@ -239,6 +332,16 @@
     transition: background-color 0.5s, margin-left 0.75s, margin-right .75s;
     
   }
+
+  .attachmentImage:hover {
+    border: 2.5px solid rgba(0,0,0, 1);
+    height: 205px;
+    width: 160px;
+    object-fit: cover;
+    box-shadow: 15px 15px 9px rgb(255, 233, 147);
+    transition: height .75s, width .75s, background-color .75s, box-shadow .75s;
+  }
+  
 
 
 }
@@ -260,6 +363,12 @@
     margin: 0rem;
   }
 
+  .buttonText {
+    color:black;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    text-shadow: 3px 3px white;
+  }
 
   .advertisement {
     display: none;
@@ -291,6 +400,12 @@
 
   .card h2 {
     margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+  }
+  
+  .card h4 {
+    font-size: 1.3rem;
+    margin: 1rem;
   }
 
   .center {

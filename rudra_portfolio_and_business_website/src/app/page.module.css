@@ -5,8 +5,9 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-image: url('/Portfolio__Business_Website_Background.jpg');
+  background-image: url('/homeBackground.jpg');
   background-size: cover;
+  font-family: var(--font);
 }
 
 .description {
@@ -290,16 +291,9 @@
     text-align: center;
   }
 
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
 
   .center {
-    padding: 0rem 0 6rem;
+    padding: 0rem 0 0rem;
   }
 
   .center::before {
