@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import banner from "../../public/bannerAD.png";
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
             <Image className={styles.contentDisplayImage} src="/winterFleming.gif" width={480} height={330}/>
               <Link href="/business">
                 <div className={styles.advertisement}>
-                    <Image src="/bannerAD.png" width={240} height={390}></Image>
+                    <Image src={banner} width={240} height={390}></Image>
                   {/* <h1>Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> Ad goes here!<br></br><br></br> (an image not text lol)</h1> */}
                 </div>
               </Link>
