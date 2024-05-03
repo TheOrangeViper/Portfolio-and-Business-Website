@@ -23,9 +23,6 @@ export default function page() {
           <Link className={styles.navlinks} href="/about">
             <p>About Me</p>
           </Link>
-          <Link className={styles.navlinks} href="/contact">
-            <p>Contact Me</p>
-          </Link>
         </div>
       </div>
       {/* This is temporary */}

@@ -60,7 +60,7 @@
 
 .card {
   padding: 1rem 1.2rem;
-  height: 20rem;
+  min-height: 20rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 3px solid rgba(0,0,0, 1);
@@ -70,6 +70,7 @@
   box-shadow: 14px 15px 29px rgba(0, 0, 0, 50);
   color: white;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
+  max-width: 30rem;
 }
 
 .card span {
@@ -98,6 +99,13 @@
   line-height: 1.5;
   max-width: 30ch;
   text-wrap: balance;
+}
+
+.cardContent {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-between;
 }
 
 .center {
@@ -301,6 +309,7 @@
 
   .center {
     padding: 0rem 0 6rem;
+    min-width: 23rem;
   }
 
   .center::before {

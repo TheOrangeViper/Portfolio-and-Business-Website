@@ -26,9 +26,6 @@ export default function page() {
           <Link className={styles.navlinks} href="/about">
             <p>About Me</p>
           </Link>
-          <Link className={styles.navlinks} href="/contact">
-            <p>Contact Me</p>
-          </Link>
         </div>
       </div>
       <div className={styles.heading}>
@@ -49,8 +46,11 @@ export default function page() {
             <div className={styles.attachment}>
               <h4 style={{fontWeight:"500", color:"rgb(42, 45, 46)", textAlign:"center"}}>
                 Complete the Registration Form below and send it to: <mark style={{color:"black", fontWeight:"650"}}>rudracodinginstructor@gmail.com</mark>.<br></br><br></br>
-                To download the form, simpliy click the attachment below:<br></br>
+                <div style={{color:"red", textShadow:".5px .25px black"}}>
+                  To download the form, simpliy click the attachment below:<br></br>
+                </div>
               </h4>
+                
               
               {/* PUT THE FORM HERE AND MAKE IT CLICKABLE TO DOWNLOAD */}
               

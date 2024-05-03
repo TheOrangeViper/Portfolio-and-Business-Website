@@ -258,7 +258,7 @@
   border-radius: 10px; /* Rounded corners */
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
   max-width: 83rem;
-  min-width: 29rem;
+  min-width: 18rem;
   margin: 0.5rem;
 
 }
@@ -365,7 +365,7 @@
 
   .buttonText {
     color:black;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: bolder;
     text-shadow: 3px 3px white;
   }
@@ -397,14 +397,14 @@
   .card {
     padding: 1rem 2.5rem;
   }
-
+  
   .card h2 {
     margin-bottom: 0.5rem;
-    font-size: 1.35rem;
+    font-size: 1.1rem;
   }
   
   .card h4 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 1rem;
   }
 

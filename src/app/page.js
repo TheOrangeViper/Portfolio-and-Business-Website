@@ -30,9 +30,6 @@ export default function Home() {
           <Link className={styles.navlinks} href="/about">
             <p>About Me</p>
           </Link>
-          <Link className={styles.navlinks} href="/contact">
-            <p>Contact Me</p>
-          </Link>
         </div>
       </div>
 
