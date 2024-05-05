@@ -38,13 +38,13 @@ export default function Home() {
           <p style={{fontWeight:"bold", fontSize:"2rem", marginLeft:"1.5rem", fontStyle:"oblique"}}>Featured: </p>
           <div className={styles.contentDisplay}>
             {/* <Image className={styles.contentDisplayImage} src={vscode} width={330} height={330}/> */}
-            <Image className={styles.contentDisplayImage} src={winterFleming} width={300} height={250}/>
-            <iframe width="440" height="260" style={{display: "flex", margin: "0.5rem", justifyContent:"center", border:"2.5px solid rgba(0,0,0, 1)", borderRadius:"5px", boxShadow: "0px 0px 100px gold"}} src="https://www.youtube.com/embed/MOIRHsI3CEc?si=wlu3qVH4dRwtJm4v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
-              <Link href="/business">
+            <Image className={styles.contentDisplayImage} src={winterFleming} width={410} height={250}/>
+            <iframe width="560" height="320" style={{display: "flex", margin: "0.5rem", justifyContent:"center", border:"2.5px solid rgba(0,0,0, 1)", borderRadius:"5px", boxShadow: "0px 0px 100px gold"}} src="https://www.youtube.com/embed/MOIRHsI3CEc?si=wlu3qVH4dRwtJm4v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+              {/* <Link href="/business">
                 <div className={styles.advertisement}>
                     <Image src={banner} width={240} height={390}></Image>
                 </div>
-              </Link>
+              </Link> */}
           </div>
         </div>
       </div>
