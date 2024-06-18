@@ -69,7 +69,7 @@ export default function page() {
                 <br></br>
                 Youtube: youtube.com/@deyrudra/
                 <br></br>
-                Email: deyrudra27@gmail.com
+                Email: rudracodinginstructor@gmail.com
                 <br></br>
               </h4>
             </div>
